@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/Semana_3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <title>Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="../html/Home.html" class="nav-link">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../html/Semana_3.html" class="nav-link">PROPOSAL</a>
+                    </li>
+                    <li>
+                        <a href="../html/AboutUs.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="../html/Contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <div>
+            <img class="back" src="../img/bg.jpg" alt="portfolio">
+        </div>
+    </section>
+
+
+    <div class="beige-box">
+        <p> <b>Propuesta de Servicio Web para Tico Gourmet </b> <br>
+
+            Estimado equipo de Tico Gourmet,
+
+            nos complace presentar nuestra propuesta de servicios web diseñada exclusivamente para realzar la presencia
+            en línea de Tico Gourmet y atraer a más comensales a su experiencia culinaria única.
+
+            Servicios Ofrecidos:
+
+        </p>
+    </div>
+    <div class="beige-box2">
+        <p> <b> Diseño Web Personalizado:</b> Crearemos un sitio web visualmente atractivo que refleje la esencia de
+            Tico Gourmet, con una interfaz fácil de navegar que resalte su menú y especialidades. <br>
+            <b>Reservas en Línea:</b> Integraremos un sistema de reservas eficiente que permitirá a los clientes
+            reservar mesas en tiempo real, mejorando la experiencia del cliente y la gestión del restaurante. <br>
+            <b> Galería de Imágenes:</b> Mostraremos la atmósfera y los platos de Tico Gourmet a través de una galería
+            de imágenes interactiva que capturará la atención de los visitantes.
+
+        </p>
+    </div>
+
+    <div class="logo">
+        <img src="../img/ticog.png" alt="">
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).scroll(function () {
+            if ($(document).scrollTop()) {
+                $("nav").addClass("black");
+            } else {
+                $("nav").removeClass("black");
+            }
+        });
+    </script>
+    <script>
+        var video = document.getElementById("my-video");
+
+        function playVideo() {
+            video.play();
+        }
+
+        video.addEventListener("mouseover", playVideo);
+    </script>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="instagram"><i
+                    class="fa fa-instagram icon"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="linkedin"><i
+                    class="fa fa-linkedin-square icon"></i></a>
+            <a href="https://www.youtube.com" target="_blank" class="youtube"><i
+                    class="fa fa-youtube-square icon"></i></a>
+            <a href="https://github.com" target="_blank" class="github"><i class="fa fa-github-square icon"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

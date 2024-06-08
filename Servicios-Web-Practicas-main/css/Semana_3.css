@@ -1,0 +1,302 @@
+body {
+  background-color: #D2D0E6;
+  font-family: "Nunito", sans-serif;
+  margin: 82px 0 0; /*Le cambié un poco el margen para que no se vea mucho espaciado entre el nav y el body*/
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+header {
+  color: #010C1B;
+  width: 100%;
+  padding: 0px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.image-container a img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-container a img:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 3; 
+  top: 0; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul {
+  background-color: rgb(67, 24, 1);
+}
+
+nav.black ul li a {
+  color: #ff7700;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  letter-spacing: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.beige-box, .beige-box2, .logo {
+  background-color: #f5f5dc;
+  color: #a52a2a;
+  font-size: 25px;
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.beige-box {
+  width: 60%;
+  height: 10%;
+}
+
+.beige-box2 {
+  width: 80%;
+  height: 10%;
+}
+
+.logo {
+  width: 40%;
+  height: 10%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #450101;
+  z-index: 3;
+  padding: 10px 0;
+}
+
+.bg-purple-dark {
+  background-color: #6a0dad;
+}
+
+.navbar-purple-dark .navbar-brand,
+.navbar-purple-dark .nav-link {
+  color: #ffffff;
+}
+
+.cartas {
+  margin-top: 30px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-container {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.footer-container .col {
+  padding-right: 0;
+  padding-left: 0;
+  flex-grow: 1;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  color: orange;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: gray;
+}
+
+.social-icons a i {
+  font-size: 2em;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .video,
+  .video1 {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .video1 {
+    top: 80%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .video,
+  .video1 {
+    width: 40%;
+    top: 40%;
+    left: 27%;
+  }
+
+  .video1 {
+    top: 40%;
+    left: 73%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: block;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    display: block;
+    border-bottom: 1px solid #010C1B;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    color: #010C1B;
+  }
+
+  nav.black ul li a {
+    color: aqua;
+  }
+
+  nav.icon {
+    background-color: #010C1B;
+    color: aqua;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  nav.icon i {
+    font-size: 28px;
+  }
+
+  nav.responsive {
+    position: relative;
+  }
+
+  nav.responsive ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #010C1B;
+  }
+
+  nav.responsive ul.visible {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .img1,
+  .img2,
+  .img3 {
+    width: 25%;
+    left: 20%;
+    top: 90%;
+    margin: 10px 0 20px 0;
+  }
+
+  .img2 {
+    left: 50%;
+  }
+
+  .img3 {
+    left: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img1,
+  .img2,
+  .img3 {
+    width: 25%;
+    left: 20%;
+    top: 110%;
+    margin: 10px 0 20px 0;
+  }
+
+  .img2 {
+    left: 50%;
+  }
+
+  .img3 {
+    left: 80%;
+  }
+}
+/*Cambio para que muestre el footer y no haya espacios en blanco*/

@@ -1,0 +1,116 @@
+body {
+    /* background-color: #000000; */
+    background: #010514;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 95vh;
+     /* margin:5px 5px 5px; 
+    border: 2px solid;
+    border-radius: 1%;
+    border-color: rgb(51, 54, 54); */
+    
+}
+
+.vid {
+
+    width: 500px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 5px solid aqua;
+    border-radius: 50px;
+    
+
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive, bold;
+    letter-spacing: 10px;
+    color: #D2D0E6;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    z-index: 2;
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+    z-index: 3;
+    cursor: pointer;
+    /* font-size: 30px;   
+    font-weight: bold; */
+}
+
+button {
+    font-family: 'Alfa Slab One', cursive;
+    background-color: #071f403c;
+    color: #D2D0E6;
+    border-color: #D2D0E6;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 1em 2em;
+}
+
+button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em aqua;
+    background-color: aqua;
+    color: #071F40;
+    font-size: 1em;
+}
+
+/* Estilos para la ventana de contacto */
+.contact-window {
+    background-color: #fed39f; /* Marrón claro */
+    color: #af460f; /* Marrón oscuro */
+    border: 2px solid #fe8761; /* Naranja */
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 50px auto;
+  }
+  
+  .contact-window h2 {
+    color: #af460f;
+  }
+  
+  .contact-window form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-window label {
+    margin-bottom: 5px;
+  }
+  
+  .contact-window input,
+  .contact-window textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #af460f;
+  }
+  
+  .contact-window button {
+    background-color: #af460f;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .contact-window button:hover {
+    background-color: #fe8761;
+  }
+  
+ 
+
